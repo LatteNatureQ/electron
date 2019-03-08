@@ -109,14 +109,14 @@ const template = [
     ]
   },
   {
-    role: '窗户',
+    role: 'window',
     submenu: [
       { role: 'minimize' },
       { role: 'close' }
     ]
   },
   {
-    role: '帮助',
+    role: 'help',
     submenu: [
       {
         label: 'Learn More',
