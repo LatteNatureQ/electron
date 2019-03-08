@@ -1,0 +1,45 @@
+.header {
+  height: 86px;
+  width: 215px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+.header .title {
+  margin-left: 10px;
+}
+.main__body {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main__body .online__music {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.main__body .online__music .title {
+  margin-left: 12px;
+  margin-bottom: 15px;
+}
+.main__body .online__music .music__pavilion {
+  height: 23px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  padding-left: 8px;
+  border-radius: 3px;
+}
+.main__body .online__music .music__pavilion:hover {
+  background-color: #e8e8e8;
+}
+.main__body .online__music .music__pavilion .music_guan {
+  margin-right: 5px;
+}
+.left_bar {
+  width: 215px;
+  height: 100%;
+  background-color: #f0f0f0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

@@ -19,8 +19,8 @@ protocol.registerStandardSchemes(['app'], {
 function createWindow() {
 
   win = new BrowserWindow({
-    width: 850,
-    height: 634,
+    width: 1020,
+    height: 692,
     // frame: false,
     titleBarStyle: 'hidden'
   })

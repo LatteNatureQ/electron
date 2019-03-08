@@ -1,0 +1,63 @@
+.top__bar {
+  height: 86px;
+  width: 100%;
+  background-color: #fafafa;
+  padding-right: 10px;
+  flex-direction: column;
+}
+.top__bar .search__bar {
+  display: flex;
+  height: 48px;
+  padding-left: 14px;
+  justify-content: space-between;
+}
+.top__bar .search__bar .music__search__box {
+  display: flex;
+  align-items: center;
+}
+.top__bar .search__bar .music__search__box .search_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.top__bar .search__bar .music__search__box .search_box .search__icon {
+  position: absolute;
+  left: 14px;
+  margin-top: 1px;
+}
+.top__bar .search__bar .music__search__box .search {
+  width: 256px;
+  background-color: #ebebeb;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 10px;
+  padding-left: 32px;
+}
+.top__bar .search__bar .user__window {
+  display: flex;
+  align-items: center;
+}
+.top__bar .search__bar .user__window img {
+  margin-right: 17px;
+}
+.top__bar .classify__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  margin-top: 10px;
+}
+.top__bar .classify__menu span {
+  margin-right: 37px;
+  font-size: 13px;
+  height: 28px;
+}
+.top__bar .classify__menu span:nth-child(1) {
+  color: #51ca90;
+}
+.top__bar .classify__menu span.active {
+  border-bottom: 2px solid #51ca90;
+}
+.top__bar .classify__menu span:hover {
+  color: #51ca90;
+}

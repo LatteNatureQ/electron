@@ -33,7 +33,7 @@ input {
 
 html,
 body {
-    min-width: 1200px;
+    /* min-width: 1200px; */
     height: 100%;
 }
 
@@ -51,6 +51,8 @@ body {
     font: 12px/100% Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, sans-serif;
     overflow: hidden;
     /* padding-top: 80px; */
+    padding-left: 215px;
+    /* padding-top: 86px; */
 }
 
 ul,
