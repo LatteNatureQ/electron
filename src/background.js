@@ -19,8 +19,8 @@ protocol.registerStandardSchemes(['app'], {
 function createWindow() {
 
   win = new BrowserWindow({
-    width: 1202,
-    height: 933,
+    width: 850,
+    height: 634,
     // frame: false,
     titleBarStyle: 'hidden'
   })
@@ -95,7 +95,7 @@ const template = [
     ]
   },
   {
-    label: 'View',
+    label: '视图',
     submenu: [
       { role: 'reload' },
       { role: 'forcereload' },
@@ -109,14 +109,14 @@ const template = [
     ]
   },
   {
-    role: 'window',
+    role: '窗户',
     submenu: [
       { role: 'minimize' },
       { role: 'close' }
     ]
   },
   {
-    role: 'help',
+    role: '帮助',
     submenu: [
       {
         label: 'Learn More',
