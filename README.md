@@ -27,3 +27,13 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Open Electron Serve
+```
+yarn run electron:serve
+```
+
+### Build
+```
+yarn run electron:build
+```
