@@ -1,5 +1,8 @@
 #pageHome {
     display: flex;
+    height: 508px;
+    position: relative;
+    overflow-y: hidden;
 }
 
 .el-carousel__item h3 {
@@ -17,12 +20,96 @@
 .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
 }
+
 .main__box {
     width: 100%;
-    background-color: #f2f2f2;
-    padding-top: 20px;
     .slideshow {
+        background: linear-gradient(#f0f0f0, #fafafa);
         padding-left: 33px;
         padding-right: 33px;
+        padding-top: 20px;
+    }
+    .recommend__playlist {
+        background: linear-gradient(#f0f0f0, #fafafa);
+        /* 标准的语法 */
+        // height: 100%;
+        margin-right: 15px; // width: 100%;
+    }
+}
+
+//滚动条
+.scroll__bar {
+    width: 9px;
+    height: 144px;
+    background-color: #d8d8d8;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+
+.recommend__playlist {
+    background: linear-gradient(bottom,#f0f0f0, #fafafa);
+    width: 100%;
+    padding-bottom: 30px;
+    .recommend__box {
+        // padding-left: 33px;
+        padding-right: 33px;
+        .header__more {
+            padding-left: 33px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 64px;
+            align-items: center;
+        }
+        .list {
+            display: flex;
+            padding-left: 33px;
+            cursor: default;
+            margin-bottom: 25px;
+            .base {
+                height: 30px;
+                background-color: #fff;
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+                margin-right: 7px;
+                &:hover {
+                    background-color: #ebebeb;
+                }
+            }
+        }
+        .picture__list {
+            padding-left: 33px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            background: linear-gradient(to bottom,#f0f0f0, #fff);
+            .cover__one {
+                width: 17%;
+                margin-right: 18px; // flex: 1;
+                margin-bottom: 26px;
+                &:nth-child(5n) {
+                    margin-right: 0;
+                }
+                .top {
+                    // height: 140px;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .bottom {
+                    margin-top: 15px;
+                    .info {
+                        margin-bottom: 9px;
+                        line-height: 16px;;
+                    }
+                }
+            }
+        }
     }
 }

@@ -20,7 +20,7 @@ function createWindow() {
 
   win = new BrowserWindow({
     width: 1020,
-    height: 692,
+    height: 720,
     // frame: false,
     titleBarStyle: 'hidden'
   })

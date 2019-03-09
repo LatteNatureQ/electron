@@ -2,7 +2,7 @@
     <div class="left__navigation__bar">
         <div class="left_bar">
             <div class="header">
-                <img src="../../assets/images/头像.png" alt="">
+                <img style="width:48px;border-radius: 50%;" src="../../assets/images/青蛙头像.png" alt="">
                 <span class="title">登录LatteQ音乐</span>
             </div>
             <div class="main__body">

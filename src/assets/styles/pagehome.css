@@ -1,5 +1,8 @@
 #pageHome {
   display: flex;
+  height: 508px;
+  position: relative;
+  overflow-y: hidden;
 }
 .el-carousel__item h3 {
   color: #475669;
@@ -16,10 +19,87 @@
 }
 .main__box {
   width: 100%;
-  background-color: #f2f2f2;
-  padding-top: 20px;
 }
 .main__box .slideshow {
+  background: linear-gradient(#f0f0f0, #fafafa);
   padding-left: 33px;
   padding-right: 33px;
+  padding-top: 20px;
+}
+.main__box .recommend__playlist {
+  background: linear-gradient(#f0f0f0, #fafafa);
+  /* 标准的语法 */
+  margin-right: 15px;
+}
+.scroll__bar {
+  width: 9px;
+  height: 144px;
+  background-color: #d8d8d8;
+  border-radius: 30px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+.recommend__playlist {
+  background: linear-gradient(bottom, #f0f0f0, #fafafa);
+  width: 100%;
+  padding-bottom: 30px;
+}
+.recommend__playlist .recommend__box {
+  padding-right: 33px;
+}
+.recommend__playlist .recommend__box .header__more {
+  padding-left: 33px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+.recommend__playlist .recommend__box .list {
+  display: flex;
+  padding-left: 33px;
+  cursor: default;
+  margin-bottom: 25px;
+}
+.recommend__playlist .recommend__box .list .base {
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+}
+.recommend__playlist .recommend__box .list .base:hover {
+  background-color: #ebebeb;
+}
+.recommend__playlist .recommend__box .picture__list {
+  padding-left: 33px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: linear-gradient(to bottom, #f0f0f0, #fff);
+}
+.recommend__playlist .recommend__box .picture__list .cover__one {
+  width: 17%;
+  margin-right: 18px;
+  margin-bottom: 26px;
+}
+.recommend__playlist .recommend__box .picture__list .cover__one:nth-child(5n) {
+  margin-right: 0;
+}
+.recommend__playlist .recommend__box .picture__list .cover__one .top {
+  width: 100%;
+}
+.recommend__playlist .recommend__box .picture__list .cover__one .top img {
+  width: 100%;
+  object-fit: cover;
+}
+.recommend__playlist .recommend__box .picture__list .cover__one .bottom {
+  margin-top: 15px;
+}
+.recommend__playlist .recommend__box .picture__list .cover__one .bottom .info {
+  margin-bottom: 9px;
+  line-height: 16px;
 }
