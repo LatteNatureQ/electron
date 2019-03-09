@@ -30,7 +30,7 @@
                     <div class="picture__list">
                         <div v-for="(item,index) in 10" :key="index" class="cover__one">
                             <div class="top">
-                                <img src="../assets/images/封面2.jpg" alt="">
+                                <img :src="require(`../assets/images/封面${index+1}.jpg`)" alt="">
                             </div>
                             <div class="bottom">
                                 <p class="info">绵请女声 | 关于温柔的一百种模样</p>

@@ -14,9 +14,9 @@ export default {
   },
   created() {},
   mounted() {
-    const ap = new APlayer({
+    new APlayer({
       container: document.getElementById("aplayer"),
-    //   autoplay: true,
+      //   autoplay: true,
       audio: [
         {
           name: "一千个晚安",
