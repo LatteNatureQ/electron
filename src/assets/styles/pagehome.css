@@ -1,8 +1,6 @@
 #pageHome {
   display: flex;
-  height: 508px;
   position: relative;
-  overflow-y: hidden;
 }
 .el-carousel__item h3 {
   color: #475669;
@@ -19,6 +17,7 @@
 }
 .main__box {
   width: 100%;
+  position: relative;
 }
 .main__box .slideshow {
   background: linear-gradient(#f0f0f0, #fafafa);
@@ -102,4 +101,7 @@
 .recommend__playlist .recommend__box .picture__list .cover__one .bottom .info {
   margin-bottom: 9px;
   line-height: 16px;
+}
+.iScrollIndicator {
+  background: rgba(0, 0, 0, 0.3) !important;
 }

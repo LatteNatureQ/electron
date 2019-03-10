@@ -21,7 +21,7 @@ function createWindow() {
   win = new BrowserWindow({
     width: 1020,
     height: 720,
-    frame: false,
+    // frame: false,
     titleBarStyle: 'hidden'
   })
 
@@ -79,88 +79,144 @@ if (isDevelopment) {
 }
 
 //菜单编辑
-const template = [
-  {
+const template = [{
     label: '菜单',
-    submenu: [
-      { role: 'undo' },
-      { role: 'redo' },
-      { type: 'separator' },
-      { role: 'cut' },
-      { role: 'copy' },
-      { role: 'paste' },
-      { role: 'pasteandmatchstyle' },
-      { role: 'delete' },
-      { role: 'selectall' }
+    submenu: [{
+        role: 'undo',
+        click() {
+          console.log(123)
+        }
+      },
+      {
+        role: 'redo'
+      },
+      // { type: 'separator' },
+      // { role: 'cut' },
+      // { role: 'copy' },
+      // { role: 'paste' },
+      // { role: 'pasteandmatchstyle' },
+      // { role: 'delete' },
+      // { role: 'selectall' }
     ]
   },
   {
     label: '视图',
-    submenu: [
-      { role: 'reload' },
-      { role: 'forcereload' },
-      { role: 'toggledevtools' },
-      { type: 'separator' },
-      { role: 'resetzoom' },
-      { role: 'zoomin' },
-      { role: 'zoomout' },
-      { type: 'separator' },
-      { role: 'togglefullscreen' }
-    ]
-  },
-  {
-    role: 'window',
-    submenu: [
-      { role: 'minimize' },
-      { role: 'close' }
-    ]
-  },
-  {
-    role: 'help',
-    submenu: [
+    submenu: [{
+        role: 'reload',
+      },
       {
-        label: 'Learn More',
-        click () { require('electron').shell.openExternal('https://electronjs.org') }
+        role: 'forcereload'
+      },
+      {
+        role: 'toggledevtools'
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'resetzoom'
+      },
+      {
+        role: 'zoomin'
+      },
+      {
+        role: 'zoomout'
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'togglefullscreen'
       }
     ]
+  },
+  {
+    // role: 'window',
+    label: '窗户',
+    submenu: [{
+        role: 'minimize'
+      },
+      {
+        label:'关闭',
+        role: 'close'
+      }
+    ]
+  },
+  {
+    // role: 'help',
+    label: '帮助',
+    submenu: [{
+      label: '联系我',
+      click() {
+        require('electron').shell.openExternal('https://electronjs.org')
+      }
+    }]
   }
 ]
 
 if (process.platform === 'darwin') {
   template.unshift({
     label: app.getName(),
-    submenu: [
-      { role: 'about' },
-      { type: 'separator' },
-      { role: 'services' },
-      { type: 'separator' },
-      { role: 'hide' },
-      { role: 'hideothers' },
-      { role: 'unhide' },
-      { type: 'separator' },
-      { role: 'quit' }
+    submenu: [{
+        role: 'about'
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'services'
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'hide'
+      },
+      {
+        role: 'hideothers'
+      },
+      {
+        role: 'unhide'
+      },
+      {
+        type: 'separator'
+      },
+      {
+        role: 'quit'
+      }
     ]
   })
 
   // Edit menu
-  template[1].submenu.push(
-    { type: 'separator' },
-    {
-      label: 'Speech',
-      submenu: [
-        { role: 'startspeaking' },
-        { role: 'stopspeaking' }
-      ]
-    }
-  )
+  template[1].submenu.push({
+    type: 'separator'
+  }, {
+    label: 'Speech',
+    submenu: [{
+        role: 'startspeaking'
+      },
+      {
+        role: 'stopspeaking'
+      }
+    ]
+  })
 
   // Window menu
-  template[3].submenu = [
-    { role: 'close' },
-    { role: 'minimize' },
-    { role: 'zoom' },
-    { type: 'separator' },
-    { role: 'front' }
+  template[3].submenu = [{
+      role: 'close'
+    },
+    {
+      role: 'minimize'
+    },
+    {
+      role: 'zoom'
+    },
+    {
+      type: 'separator'
+    },
+    {
+      role: 'front'
+    }
   ]
 }
 
